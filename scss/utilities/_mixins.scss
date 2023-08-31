@@ -1,0 +1,13 @@
+@mixin typography($fontSize, $fontWeight, $lineHeight, $fontColor){
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
+    color: $fontColor
+}
+
+@mixin flex($justifyContent, $alignItems, $flexDirection){
+    display: flex;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    flex-direction: $flexDirection;
+}

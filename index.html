@@ -4,23 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.min.css">
   <title>Frontend Mentor | NFT preview card component</title>
 </head>
 <body>
 
-  <main>
+  <main class="container">
     <img src="./images/image-equilibrium.jpg" alt="Equilibrium NFT">
     <h1>Equilibrium #3429</h1>
-    <p>Our Equilibrium collection promotes balance and calm.</p>
+    <p class="description">Our Equilibrium collection promotes balance and calm.</p>
     <div>
-      <p>0.041 ETH</p>
-      <p>3 days left</p>
+      <p class="caption_bold">0.041 ETH</p>
+      <p class="caption">3 days left</p>
     </div>
     <section>
       <img src="./images/image-avatar.png" alt="Photo of the creator">
       <!--I've decided to put this text as a heading to help SEO when looking for Jules Wyvern-->
-      <h2>Creation of Jules Wyvern</h2>
+      <h2 class="caption">Creation of <span class="author">Jules Wyvern</span></h2>
     </section>
   </main>
 

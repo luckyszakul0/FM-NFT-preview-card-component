@@ -1,0 +1,31 @@
+@use '../utilities' as *;
+
+h1{
+    @include typography(1.375rem, 600, auto, $white);
+
+    &:hover{
+        color: $cyan;
+        cursor: pointer;
+    }
+}
+
+.description{
+    @include typography(1.125rem, 300, 1.625rem, $softBlue)
+}
+
+.caption_bold{
+    @include typography(1rem, 600, auto, $cyan);
+}
+
+.caption{
+    @include typography(1rem, 400, auto, $softBlue);
+
+    .author{
+        @include typography(1rem, 400, auto, $white);
+
+        &:hover{
+            color: $cyan;
+            cursor: pointer;
+        }
+    }
+}

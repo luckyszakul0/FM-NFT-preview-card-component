@@ -1,0 +1,9 @@
+@use '../utilities' as *;
+
+.container{
+    @include flex(center, flex-start, column);
+    gap: 1rem;
+    background: $cardBG;
+    border-radius: 1.5rem;
+    max-width: 22rem;
+}

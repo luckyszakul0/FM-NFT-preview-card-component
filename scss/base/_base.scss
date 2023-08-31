@@ -1,0 +1,11 @@
+@use '../utilities' as *;
+
+body{
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Outfit', sans-serif;
+    background: $mainBG;
+    padding: 10rem;
+    @include flex(center, center, column);
+}
