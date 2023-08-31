@@ -1,0 +1,11 @@
+@use '../utilities' as *;
+
+.flex_far{
+    @include flex(space-between, center, row);
+    width: 100%;
+}
+
+.flex_close{
+    @include flex(center, center, row);
+    gap: 0.5rem;
+}
