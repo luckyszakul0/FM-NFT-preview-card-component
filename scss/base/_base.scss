@@ -2,10 +2,10 @@
 
 body{
     overflow: hidden;
-    height: 100vh;
+    height: 100svh;
     width: 100vw;
     font-family: 'Outfit', sans-serif;
     background: $mainBG;
-    padding: 10rem;
+    padding: 10rem 1rem;
     @include flex(center, center, column);
 }

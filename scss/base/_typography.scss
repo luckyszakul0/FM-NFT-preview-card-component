@@ -2,6 +2,7 @@
 
 h1{
     @include typography(1.375rem, 600, auto, $white);
+    transition: all 0.3s;
 
     &:hover{
         color: $cyan;
@@ -22,6 +23,7 @@ h1{
 
     .author{
         @include typography(1rem, 400, auto, $white);
+        transition: all 0.3s;
 
         &:hover{
             color: $cyan;
