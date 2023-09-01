@@ -1,45 +1,5 @@
 @use '../utilities' as *;
 
-@keyframes slideIn{
-    from{
-        opacity: 0;
-        transform: translateY(-100px);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideOut{
-    from{
-        opacity: 1;
-        transform: translateY(0);
-    }
-    to{
-        opacity: 0;
-        transform: translateY(100px);
-    }
-}
-
-@keyframes dimWebsite {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 0.75;
-    }
-}
-
-@keyframes undimWebsite{
-    from{
-        opacity: 0.75;
-    }
-    to{
-        opacity: 0;
-    }
-}
-
 .dimmer{
     background: hsl(0, 0%, 0%);
     display: none;
@@ -73,5 +33,10 @@
         border-radius: 50%;
         overflow: hidden;
         cursor: pointer;
+        border: 3px solid $white;
+
+        @media only screen and (max-width: 500px){
+            width: 20%;
+        }
     }
 }

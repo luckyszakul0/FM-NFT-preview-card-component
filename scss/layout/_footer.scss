@@ -2,12 +2,14 @@
 
 .attribution{
     position: absolute;
-    bottom: 5px;
+    bottom: 0;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 11px;
+    font-size: 0.65rem;
     text-align: center;
     color: $white;
+    z-index: 150;
+    opacity: 0.75;
 }
 .attribution a{
     color: hsl(228, 45%, 44%);
